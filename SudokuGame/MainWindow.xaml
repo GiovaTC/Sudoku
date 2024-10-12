@@ -1,0 +1,13 @@
+﻿<Window x:Class="SudokuGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sudoku Game" Height="600" Width="600">
+    <Grid>
+        <UniformGrid Rows="9" Columns="9">
+            <!-- Aquí se crearán 81 TextBoxes para cada celda del Sudoku -->
+            <TextBox Width="40" Height="40" FontSize="20" TextAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" />
+            <!-- Repite el TextBox 81 veces para cada celda -->
+        </UniformGrid>
+    </Grid>
+</Window>
+
