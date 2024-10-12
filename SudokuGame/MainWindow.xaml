@@ -3,11 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Sudoku Game" Height="600" Width="600">
     <Grid>
-        <UniformGrid Rows="9" Columns="9">
-            <!-- Aquí se crearán 81 TextBoxes para cada celda del Sudoku -->
-            <TextBox Width="40" Height="40" FontSize="20" TextAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="0.5" />
-            <!-- Repite el TextBox 81 veces para cada celda -->
+        <UniformGrid Rows="9" Columns="9" Margin="20">
+            <!-- Generar 81 TextBoxes para cada celda del Sudoku -->
+            <TextBox Width="40" Height="40" FontSize="20" 
+                     TextAlignment="Center" VerticalContentAlignment="Center" 
+                     BorderBrush="Gray" BorderThickness="0.5" 
+                     Background="White" />
+            <TextBox Width="40" Height="40" FontSize="20" 
+                     TextAlignment="Center" VerticalContentAlignment="Center" 
+                     BorderBrush="Gray" BorderThickness="0.5" 
+                     Background="White" />
+            <!-- Repite el TextBox 81 veces (se simplifican por claridad) -->
+            <!-- Sugerencia: Puedes copiar y pegar o crear un estilo con un bucle de generación en el código detrás -->
         </UniformGrid>
     </Grid>
 </Window>
-
